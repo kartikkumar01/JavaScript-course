@@ -81,3 +81,7 @@ console.log(gameCounter);
 
 
 //sir ne bataya ki ye complex operations bhi hote hai, par hume inko zada samajhne ki need nahi hai kyuki real world production me is code ko easy to read code nahi mana jata. and READABILITY IS VERY IMPORTANT
+
+//Increment prefix and postfix
+//++x -> pehle increment karega fir x ki value return karega
+//x++ -> pehle return karega fir x ki value increment karega
