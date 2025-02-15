@@ -51,3 +51,33 @@ console.log(Boolean(undefined)) //false
 console.log(Boolean(null)) //false
 console.log(Boolean('')) //false
 //all others are true
+
+
+
+let str1 = "hello"
+let str2 = " hitesh"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+//YE HAI KUCH TRICKY OPERATIONS -------------JINPE KOI ZARURAT NAHI HAI MATHA MARNE KI
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2); //left to right execution hoti hai, jese hi string milta hai to sab string me convert ho jata hai
+// console.log(1 + 2 + "2");
+
+// console.log( (3 + 4) * 5 % 3);
+
+// console.log(+true);
+// console.log(+"");
+
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100
+++gameCounter;
+console.log(gameCounter);
+
+
+//sir ne bataya ki ye complex operations bhi hote hai, par hume inko zada samajhne ki need nahi hai kyuki real world production me is code ko easy to read code nahi mana jata. and READABILITY IS VERY IMPORTANT
