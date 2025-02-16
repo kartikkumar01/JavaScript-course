@@ -1,13 +1,13 @@
 //Datatypes in JS are categorized in two types based on how they are stored in memory and how they are accessed.
 
 //Primitive / Basic Types (stored in stack[copy of value is provided])
-1) number
-2) string 
-3) boolean 
-4) undefined 
-5) null 
-6) bigint 
-7) symbol 
+// 1) number
+// 2) string 
+// 3) boolean 
+// 4) undefined 
+// 5) null 
+// 6) bigint 
+// 7) symbol 
 
 //Referenced / derived Types (stored in heap[reference is provided])
 // 1) object (it is not {}, it is some entity which has properties and may have methods) => student is object
