@@ -1,4 +1,3 @@
-//Kai baar data ko dusre datatype me convert karne ki zaroorat pad sakti hai
 //Jese form se data aa raha string me or hume convert karna hai number me.
 //esa calculator ke case me ho skta hai.
 
