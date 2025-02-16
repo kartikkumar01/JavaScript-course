@@ -60,7 +60,8 @@ let str2 = " hitesh"
 let str3 = str1 + str2
 // console.log(str3);
 
-//YE HAI KUCH TRICKY OPERATIONS -------------JINPE KOI ZARURAT NAHI HAI MATHA MARNE KI
+//YE HAI KUCH TRICKY OPERATIONS -------------JINPE KOI ZARURAT NAHI HAI (MATHA) MARNE KI
+//HERE JS IS DOING IMPLICIT(APNEAAP) CONVERSION. JAB BHI STRING MILTA HAI TO SABHI OPERANDS KO STRING ME CONVERT KAR DETA HAI
 // console.log("1" + 2);
 // console.log(1 + "2");
 // console.log("1" + 2 + 2); //left to right execution hoti hai, jese hi string milta hai to sab string me convert ho jata hai
