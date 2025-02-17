@@ -1,5 +1,14 @@
-//string object has properties and method to manipulate strings.
-//we can use methods and properties on an object only
+// Primitives (number, string, boolean) don’t have methods.
+// When you call a method on a primitive, JavaScript temporarily converts it into an object.
+// This is called Autoboxing.
+// Explicitly creating an object with new Number(num) is not needed in most cases.
+
+// let str = 'hi'
+// str.length
+//actually ->  new String(str).length Now here js is doing this behind the scenes which is called autoboxing
+
+//NOW WHY JS IS DOING THIS?
+//BCZ object is an entity which has properties and methods. we can use methods and properties on an object only
 
 let name1 = 'kartik' //string primitive
 let upperName1 = name1.toUpperCase() //agar object pe hi methods use ho sakte hai to yaha to name1 ek primitive hai lekin uspe bhi mehtods use ho rahe hai
