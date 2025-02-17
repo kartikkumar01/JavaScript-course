@@ -1,4 +1,5 @@
-//object is an entity which has properties and methods. we can use methods and properties on an object only
+//string object has properties and method to manipulate strings.
+//we can use methods and properties on an object only
 
 let name1 = 'kartik' //string primitive
 let upperName1 = name1.toUpperCase() //agar object pe hi methods use ho sakte hai to yaha to name1 ek primitive hai lekin uspe bhi mehtods use ho rahe hai
