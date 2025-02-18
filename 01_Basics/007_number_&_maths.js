@@ -32,5 +32,5 @@ console.log(Math.random()); // return b/w 0-1
 console.log(Math.random() * 10); // shift 1 decimal and returns b/w 0 - 9
 console.log((Math.random() * 10) + 1); // just to shift range from 1-10 we add 1
 let min = 15, max = 200
-console.log(Math.trunc((Math.random() * (max - min)) + min)); // just to shift range from 1-10 we add 1
+console.log(Math.trunc((Math.random() * (max - min)) + min)); //  just to shift range from 1-10 we add 1
 
