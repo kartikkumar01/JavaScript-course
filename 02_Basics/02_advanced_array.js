@@ -23,5 +23,7 @@ console.log(Array.from("kartik")); // [ 'k', 'a', 'r', 't', 'i', 'k' ]
 console.log(Array.of(1,2,3,4,5));
 console.log([1,2,3,4,5]);
 
+// By mdn -> The difference between Array. of() and the Array() constructor is in the handling of single arguments: Array. of(7) creates an array with a single element, 7 , whereas Array(7) creates an empty array with a length property of 7 . (That implies an array of 7 empty slots, not slots with actual undefined values.)
+
 
 
