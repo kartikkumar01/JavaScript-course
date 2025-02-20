@@ -22,7 +22,6 @@ console.log(user.skills[1]);
 
 //accessing symbols
 console.log(user[sym]);
-console.log(user.newage);
 
 //adding key in object
 user.email = 'hola@gmail.com';
@@ -39,10 +38,10 @@ console.log(user.hasOwnProperty('age')); //mdn say use Object.hasOwn()
 console.log(Object.hasOwn(user, 'age'));
 
 //extracting keys from object
-console.log(Object.keys(user));
+console.log(Object.keys(user)); //returns an array of keys
 
 //extracting values from object
-console.log(Object.values(user));
+console.log(Object.values(user)); //returns an array of values
 
 
 //MERGING TWO OBJECTS

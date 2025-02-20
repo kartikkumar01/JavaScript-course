@@ -2,6 +2,7 @@ let fruits = [`mango`, `apple`, `grapes`, `papaya`, `orange`, `litchi`]
 let vegetables = new Array(`cauliflower`, `lagyfinger`, `eggplant`, `cabbage`, `capcicum`)
 
 //concat v/s spread operator
+//spread operator works on iteratable
 let concat1 = fruits.concat(vegetables)
 let concat2 = fruits.concat(vegetables, fruits) //concat multiple arrays
 let spread = [...fruits, ...vegetables, ...`kartik`]
