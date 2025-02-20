@@ -27,3 +27,18 @@ function addCartPrices(...price){
 
 addCartPrices(200,100,500,655)
 
+//function taking object and array
+function takeObj({name , age}){
+    console.log(`Hi ${name}, you are ${age} years old !`)
+}
+
+function takeArray([one, two]){
+    console.log(`Your first priority is ${one} and second is ${two}`)
+}
+
+takeObj({
+    name : 'kartik',
+    age : 20
+})
+
+takeArray(['Js', 'College'])
