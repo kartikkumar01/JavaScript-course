@@ -1,0 +1,20 @@
+The Execution of the JavaScript works on three phases:
+1. Global Execution Context / Global Environment is created and set to 'this'
+2. Memory phase / Creation phase
+3. Execution phase
+
+Phase 1: Global Execution Context / Global Environment
+The value of `this` keyword is set to Global Execution Context (which is an empty Object in NODE environment, & window object in browser environment)
+
+Phase 2: Memory phase
+During this phase, JS engine scans the code and assigns the initial values. For variables they are 'undefined' and for functions they are set to their function definition
+
+Phase 3: Execution phase
+After the creation phase completed, the execution phase begins where actual values of the variables are set. And when the functions are called it creates a new 'Function Execution context' which consists of two phases (they works same as explained above but only for the particular function scope):
+1. Memory phase 
+2. Execution phase 
+📝The return value of the 'Function Execution' is passed to the Global Execution Context
+
+
+**JavaScript is single threaded means everything is a individual process
+**JS created a call stack which follows the LIFO concept. Like in other languages main() goes in the stack first and then others, but in JS global execution context (named anonymous function) goes in the call stack first and hence the others function.
