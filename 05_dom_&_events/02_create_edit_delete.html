@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- CREATING NEW ELEMENT IN DOM 
+-> parent.children --- returns html collection of childlist 
+-> parent.firstElementChild --- returns first child which is element
+-> parent.lastElementChild --- returns last child which is element
+-> child.parentElement --- returns parent of child
+-> child.nextElementSibling --- returns next sibling
+
+-> parent.childNodes ---- ****IMPORTANT***** it returns a complete tree[nodeList] structure including comment and line break
+-> paretn.firstChild ---- treats text node as first child
+
+-> document.createElement('h1')
+-> element.appendChild(element)
+-> element.remove()
+-->
+
+
+<!-- EDITING AND DELETING ELEMENT IN DOM -->
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+    <script>
+        let list = document.querySelector('li').remove()
+    </script>
+</body>
+</html>
