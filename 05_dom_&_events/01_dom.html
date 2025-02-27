@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--    NOTES----
+    -> DOM[All Document elements are objects in javascript] 
+    -> window is a global object which contains document object
+    -> console.dir(document) gives the document object as it is
+    -> document.baseURI - give the base url
+    -> document.getElementById() - used to select the element with id
+
+    -> targeting the elements [elements ko catch karna]
+    -> document.getElementByClassName() //returns HTML collection
+
+    -> element.className - gives the class name [used in react]
+    -> element.id = gives the id
+    -> element.getAttribute('att_name')
+    -> element.setAttribute('att_name','att_value') - overwrites the pre-existing values
+    -> element.style.color = 'red' - keeps the pre-existing values
+
+    -> element.textContent =  gives the display:none element too
+    -> element.innerText = does not give the display:none elements
+    -> element.innerHTML = gives the html too
+
+    -> element.querySelector('any') = it can take any selector like we give in css
+    -> We can also use querySelector or any selecting method on any element which contains some child nodes
+    -> We can use forEach on NodeList which comes from querySelectorAll()
+    -> NODELIST AND HTML COLLECTION are not pure arrays but nodelist has forEach() method
+    -> Html collection do not have forEach() so it needs to be converted to array first
+    -> Both nodelist & htmlcollection can be converted into array by using Array.from(nodeList/HtmlCollection)
+
+    -->
+    <h2 class="smallHeading">One</h2>
+    <h2 class="smallHeading">Two</h2>
+    <h2 class="smallHeading">Three</h2>
+    <h2 class="smallHeading">Four</h2>
+    <h2 class="smallHeading">Five</h2>
+    <h1 id="myHeading" class="hello">Hello <span style="display:none;">My</span><span>world</span></h1>
+     <script>
+        let h1 = document.getElementById('myHeading')
+        let smHeading = Array.from(document.getElementsByClassName('smallHeading'))
+        smHeading.forEach((element)=>{
+            // element.style.color = 'green'
+            // element.style.backgroundColor = 'pink'
+
+            // element.setAttribute('style',`color : green`)
+            // element.setAttribute('style',`background-color : pink`)
+        })
+        </script>
+</body>
+</html>
