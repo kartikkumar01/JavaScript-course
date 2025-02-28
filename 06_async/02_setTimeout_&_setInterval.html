@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1 style="width: 50%;">Hello World</h1>
+    <button id="start" type="button">START</button>
+    <button id="stop" type="button">STOP</button>
+</body>
+<script>
+    let heading = document.querySelector('h1')
+    let interval
+    document.getElementById('start').addEventListener('click',()=>{
+        interval = setInterval(() => {
+            heading.innerText += '0'
+        }, 100);        
+    })
+    document.getElementById('stop').addEventListener('click',()=>{
+        clearInterval(interval)
+    })
+</script>
+</html>
