@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="prayer"
+                    src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+    <script>
+        // window.addEventListener('load',(e)=>{
+        //         console.log('window loaded') // fires when everything is loaded
+        // })
+
+        // document.addEventListener('DOMContentLoaded',(e)=>{
+        //         console.log('dom loaded') //fires when only html is loaded
+        // })
+
+        addEventListener('keydown', (event)=>{
+                // const actualTime = new Date(Date.now() - performance.now() + event.timeStamp);
+                // console.log(actualTime.toLocaleTimeString());
+                // console.log(new Date().toLocaleTimeString());
+                // console.log(event.currentTarget);
+                // console.log(event.target);
+                
+                // console.log(event.altKey);
+                // console.log(event.shiftKey);      
+                // console.log(event.ctrlKey);     
+                console.log(event.keyCode);
+                 
+        })
+
+
+        </script>
+    <!-- **** 3 approaches to add eventListeners ****
+
+    Every EVENT has its own object containing various important properties and methods.
+
+     1) onclick attribute in element -> avoid this bcz it creates problem when application scales // <h1 onclick="alert('hi')">Hello</h1>
+
+     2) onclick property in Js -> avoid this too as it don't give full control like we cannot prevent the default behaviours
+         document.getElementById('owl').onclick = function(){
+         alert("owl clicked") }
+
+     3) addEventListener(event_name, callback fn, propagation) -> good as it gives more features like event propagation(bubbling and capturing)
+
+     -> Jitna event object ko padhoge, utna assan hoga tumhe.
+     -> We generally get browser and environment events in event object
+
+     -> Event propagation - capturing and bubbling
+     ******HOMEWORK******
+     // type - load, domContentLoaded, click, dblclik, mouseover,mouseout
+     , timestamp - gives the time in miliseconds since the page is loaded
+     , preventDefault() - prevents the default behaviour of element like submitbtn , a tag
+
+    // target - returns the element that triggered the event
+    , currentTarget, -  element that the event listener is attached to. Even if you click a child, currentTarget will be the parent
+    , srcElement - Same as target, but it's the older, non-standard version from Internet Explorer.
+    , toElement - Used in mouseover/mouseout events.
+
+    // clientX, clientY, => covers the viewport
+    screenX, screenY => covers the whole screen
+    // altkey, ctrlkey, shiftkey => true/false
+    //keyCode => ascii value
+    *******HOMEWORK********
+
+    -->
+
+</body>
+
+</html>
