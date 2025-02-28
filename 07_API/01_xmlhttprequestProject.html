@@ -1,0 +1,65 @@
+<!-- 
+API [Application programming interface] is a medium of communication between two systems
+With api we can take the data from some resource
+we generally request the data through api and get the json data
+
+Github has a great api - https://api.github.com/users/[username]
+random user api - give random user data
+json formattor - used to format the json data
+
+Now fetch is used , but pehle xmlhttprequest hoti thi ajax me jis se data ata tha
+
+Response generally come in string[JSON] and we need to convert it into object JSON.parse()
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card{
+            width: 300px;
+            border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+            border-radius: 16px;
+        }
+        #card img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="username" placeholder="enter github username">
+    <button id="btn">Search</button>
+</body>
+<script>
+    let username;
+    document.querySelector('#btn').addEventListener('click',()=>{
+        username = document.querySelector('#username').value
+        let xhr = new XMLHttpRequest()
+    let requestUrl = `https://api.github.com/users/${username}`
+    xhr.onreadystatechange=function (){
+        //Executes when the state changes
+        if(xhr.readyState == 4){
+            let jsonData = this.responseText //Javascript string object notation
+            let user = JSON.parse(jsonData)
+            let card = document.createElement('div')
+            console.log(card);
+            card.id = 'card'
+            card.innerHTML += `<img src="${user.avatar_url}">`
+            card.innerHTML += `<h1>${user.name}</h1>`
+            card.innerHTML += `<h1>${user.followers}</h1>`
+            document.body.appendChild(card)
+        }
+    }
+    xhr.open('GET',requestUrl)
+    xhr.send()
+    })
+    // Steps to create XMLHttpRequest:
+    // 1-Create an XMLHttpRequest object
+    // 2-Open a URL
+    // 3-Send the request.
+</script>
+</html>
