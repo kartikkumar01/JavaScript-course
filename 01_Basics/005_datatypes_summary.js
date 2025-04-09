@@ -9,7 +9,10 @@
 // 6) bigint 
 // 7) symbol 
 
-//Referenced / derived Types (stored in heap[reference is provided])
+//Referenced / derived Types (stored in heap[reference is provided]) => object
+
+//derived type if object only , these are the data structures
+
 // 1) object (it is not {}, it is some entity which has properties and may have methods) => student is object
 // 2) array (it is not [], it is list of similar type of things) => marks of student
 // 3) function (it is not ()=>{}, it is a piece of instructions that may take some input, process and returns a result.) => teacher is a function which takes student paper as input , checks it, and return marks
